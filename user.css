@@ -1,0 +1,149 @@
+/* ===== Gradient & Shadow Removal ===== */
+.main-entityHeader-background,
+.main-entityHeader-gradient,
+.main-entityHeader-overlay {
+  background: none !important;
+  background-image: none !important;
+}
+.main-card-card,
+.main-home-content .main-shelf-shelf {
+  box-shadow: none !important;
+}
+
+/* ===== Top Bar ===== */
+:root .Root__top-bar header .main-topBar-background,
+:root .main-topBar-container .main-topBar-background {
+  background-color: var(--spice-main) !important;
+}
+:root .Root__top-bar header button:not(.x-searchInput-searchInputClearButton),
+:root .Root__top-bar header .main-topBar-button,
+:root .main-topBar-container button:not(.x-searchInput-searchInputClearButton),
+:root .main-topBar-container .main-topBar-button {
+  color: var(--spice-subtext) !important;
+  background-color: var(--spice-main-elevated) !important;
+}
+
+/* ===== Playback Controls ===== */
+:root .Root__now-playing-bar .Button-sm-16-buttonTertiary-iconOnly-isUsingKeyboard-useBrowserDefaultFocusStyle,
+:root .Root__now-playing-bar .control-button,
+:root .Root__now-playing-bar .main-skipForwardButton-button,
+:root .Root__now-playing-bar .main-skipBackButton-button {
+  color: var(--spice-grey1) !important;
+}
+:root .Root__now-playing-bar .Button-sm-16-buttonTertiary-iconOnly-isUsingKeyboard-useBrowserDefaultFocusStyle:hover,
+:root .Root__now-playing-bar .control-button:hover,
+:root .Root__now-playing-bar .main-skipForwardButton-button:hover,
+:root .Root__now-playing-bar .main-skipBackButton-button:hover {
+  color: var(--spice-text) !important;
+}
+:root .Root__now-playing-bar .x-progressBar-progressBarBg > div > div {
+  background-color: var(--spice-yellow) !important;
+}
+:root .Root__now-playing-bar .main-playButton-PlayButton.main-playButton-primary {
+  color: var(--spice-player);
+  background-color: var(--spice-yellow) !important;
+}
+:root .Root__now-playing-bar .control-button-heart[aria-checked=true],
+:root .Root__now-playing-bar .main-addButton-active,
+:root .Root__now-playing-bar .main-addButton-active:hover {
+  color: var(--spice-red);
+}
+
+/* ===== Track List ===== */
+:root .main-trackList-trackListRow:hover {
+  background-color: var(--spice-selected-row) !important;
+}
+:root .main-trackList-trackListHeaderRow {
+  background-color: var(--spice-main) !important;
+}
+
+/* ===== Lyrics ===== */
+.lyrics-lyricsContainer-LyricsContainer {
+  background-color: var(--spice-main) !important;
+}
+.lyrics-lyricsContainer-LyricsLine-active {
+  color: var(--spice-yellow) !important;
+}
+.lyrics-lyricsContainer-LyricsLine-passedLine {
+  color: var(--spice-grey) !important;
+}
+.lyrics-lyricsContainer-LyricsLine-inactiveLine {
+  color: var(--spice-grey) !important;
+}
+
+/* ===== Context Menus ===== */
+:root .main-contextMenu-menuItemButton:hover,
+:root .main-contextMenu-menuItemButton:not([aria-checked=true]):focus {
+  background-color: var(--spice-bg3) !important;
+  color: var(--spice-text);
+}
+
+/* ===== Toggles & Inputs ===== */
+:root .x-toggle-indicatorWrapper {
+  background-color: var(--spice-bg3);
+}
+:root .x-toggle-indicatorWrapper .x-toggle-indicator {
+  background-color: var(--spice-text);
+}
+:root input:checked ~ .x-toggle-indicatorWrapper {
+  background-color: var(--spice-yellow) !important;
+}
+:root input:checked ~ .x-toggle-indicatorWrapper .x-toggle-indicator {
+  background-color: var(--spice-main) !important;
+}
+
+/* ===== Scrollbar ===== */
+:root .os-scrollbar-track,
+:root ::-webkit-scrollbar {
+  width: 0.5em;
+}
+:root .os-scrollbar-handle,
+:root ::-webkit-scrollbar-thumb {
+  background-color: var(--spice-grey1) !important;
+  border-radius: 6px;
+}
+
+/* ===== Encore / Design System Overrides ===== */
+:root .encore-dark-theme,
+:root .encore-light-theme {
+  --background-base: var(--spice-main) !important;
+  --background-highlight: var(--spice-bg3) !important;
+  --background-press: var(--spice-bg5) !important;
+  --background-elevated-base: var(--spice-main-elevated) !important;
+  --background-elevated-highlight: var(--spice-bg3) !important;
+  --background-tinted-base: var(--spice-main-elevated) !important;
+  --text-base: var(--spice-text) !important;
+  --text-subdued: var(--spice-grey2) !important;
+  --text-bright-accent: var(--spice-yellow) !important;
+  --essential-base: var(--spice-text) !important;
+  --essential-subdued: var(--spice-grey1) !important;
+  --essential-bright-accent: var(--spice-yellow) !important;
+  --decorative-base: var(--spice-text) !important;
+  --decorative-subdued: var(--spice-grey1) !important;
+}
+:root .encore-dark-theme .encore-inverted-light-set,
+:root .encore-light-theme .encore-inverted-dark-set {
+  --background-highlight: var(--spice-bg3) !important;
+  --background-press: var(--spice-bg5) !important;
+}
+
+/* ===== Filter Chips & Home Header ===== */
+:root .x-filterBox-filterInput {
+  background-color: var(--spice-main-elevated);
+  color: var(--spice-subtext);
+}
+:root .main-home-filterChipsScrollContainer,
+:root .main-home-header {
+  background-color: var(--spice-main) !important;
+}
+.main-home-filterChipWrapper .x-filterChip-filterChip {
+  background-color: var(--spice-main-elevated);
+  color: var(--spice-subtext);
+}
+.main-home-filterChipWrapper .x-filterChip-filterChip:hover {
+  background-color: var(--spice-bg3);
+}
+.main-home-filterChipWrapper .x-filterChip-selected {
+  background-color: var(--spice-yellow) !important;
+  color: var(--spice-main) !important;
+}
