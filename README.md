@@ -5,6 +5,7 @@ A [Spicetify](https://spicetify.app/) theme using [sainnhe's Gruvbox Material](h
 Flat design with yellow as the primary accent. No gradients, no shadows.
 
 ![dark](screenshots/dark.png)
+![light](screenshots/light.png)
 
 ## Install
 
@@ -36,10 +37,6 @@ Switch with:
 spicetify config color_scheme light
 spicetify apply
 ```
-
-## Palette
-
-Uses the full Gruvbox Material medium-contrast palette as custom CSS variables (`--spice-red`, `--spice-yellow`, `--spice-green`, etc.), available for extensions and custom CSS.
 
 ## Credits
 

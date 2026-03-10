@@ -1,7 +1,19 @@
-/* ===== Force subdued text override ===== */
+/* ===== Force subdued overrides ===== */
 :root,
 :root * {
   --text-subdued: var(--spice-grey2) !important;
+  --essential-subdued: var(--spice-grey1) !important;
+  --decorative-subdued: var(--spice-grey1) !important;
+}
+
+/* ===== Icon contrast ===== */
+:root .Button-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle,
+:root .Button-buttonTertiary-small-iconOnly-useBrowserDefaultFocusStyle {
+  color: var(--spice-grey1) !important;
+}
+:root .Button-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle:hover,
+:root .Button-buttonTertiary-small-iconOnly-useBrowserDefaultFocusStyle:hover {
+  color: var(--spice-text) !important;
 }
 
 /* ===== Gradient & Shadow Removal ===== */
@@ -10,6 +22,14 @@
 .main-entityHeader-overlay {
   background: none !important;
   background-image: none !important;
+}
+.main-entityHeader-headerText,
+.main-entityHeader-headerText *,
+.main-entityHeader-metaData,
+.main-entityHeader-metaData *,
+.main-entityHeader-metaData .encore-internal-color-text-subdued,
+.main-entityHeader-metaData .main-entityHeader-metaDataTextSubdued {
+  color: #fbf1c7 !important;
 }
 .main-card-card,
 .main-home-content .main-shelf-shelf {
@@ -134,8 +154,11 @@
 }
 
 /* ===== Secondary / Subdued Text ===== */
-:root .encore-internal-color-text-subdued {
+:root .encore-internal-color-text-subdued:not(.main-entityHeader-metaDataTextSubdued) {
   color: var(--spice-grey2) !important;
+}
+:root .main-entityHeader-metaData .encore-internal-color-text-subdued {
+  color: #fbf1c7 !important;
 }
 
 :root .TypeElement-mesto-type {
