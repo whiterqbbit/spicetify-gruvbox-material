@@ -1,3 +1,9 @@
+/* ===== Force subdued text override ===== */
+:root,
+:root * {
+  --text-subdued: var(--spice-grey2) !important;
+}
+
 /* ===== Gradient & Shadow Removal ===== */
 .main-entityHeader-background,
 .main-entityHeader-gradient,
@@ -125,6 +131,22 @@
 :root .encore-light-theme .encore-inverted-dark-set {
   --background-highlight: var(--spice-bg3) !important;
   --background-press: var(--spice-bg5) !important;
+}
+
+/* ===== Secondary / Subdued Text ===== */
+:root .encore-internal-color-text-subdued {
+  color: var(--spice-grey2) !important;
+}
+
+:root .TypeElement-mesto-type {
+  color: var(--spice-subtext) !important;
+}
+:root .Root__nav-bar .main-rootlist-wrapper div:nth-child(2) > li > div p {
+  color: var(--spice-subtext) !important;
+}
+:root .Root__right-sidebar .Button-textSubdued-sm-16-buttonTertiary-condensed-useBrowserDefaultFocusStyle,
+:root .Root__right-sidebar .Button-textSubdued-sm-16-buttonTertiary-condensed-isUsingKeyboard-useBrowserDefaultFocusStyle {
+  color: var(--spice-text) !important;
 }
 
 /* ===== Filter Chips & Home Header ===== */
