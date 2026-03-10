@@ -2,10 +2,9 @@
 
 A [Spicetify](https://spicetify.app/) theme using [sainnhe's Gruvbox Material](https://github.com/sainnhe/gruvbox-material) palette.
 
-Flat design with yellow as the primary accent. No gradients, no shadows.
-
-![dark](screenshots/dark.png)
-![light](screenshots/light.png)
+   | Dark | Light |
+   |----------|------|
+   | ![dark](screenshots/dark.png) | ![light](screenshots/light.png) |
 
 ## Install
 
@@ -24,13 +23,6 @@ spicetify config current_theme gruvbox-material
 spicetify config color_scheme dark
 spicetify apply
 ```
-
-## Color Schemes
-
-| Scheme | Background | Accent |
-|--------|-----------|--------|
-| `dark` | `#282828` | `#d8a657` |
-| `light` | `#fbf1c7` | `#b47109` |
 
 Switch with:
 ```bash
